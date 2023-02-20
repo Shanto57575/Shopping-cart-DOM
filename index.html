@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+</html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shoppingCart</title>
+    <link rel="icon" href="https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_200X200.png">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="navbar bg-base-100 shadow-2xl px-12">
+            <div class="flex-1">
+                <a class="btn btn-ghost normal-case text-5xl">shopIfy</a>
+            </div>
+            <div class="flex-none gap-2">
+                <div class="form-control">
+                    <input type="text" placeholder="Search" class="input input-bordered" />
+                </div>
+                <div class="dropdown dropdown-end">
+                    <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+                        <div class="w-10 rounded-full">
+                            <img src="./img/panda.png" />
+                        </div>
+                    </label>
+                    <ul tabindex="0"
+                        class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
+                        <li>
+                            <a class="justify-between">
+                                Profile
+                                <span class="badge">New</span>
+                            </a>
+                        </li>
+                        <li><a>Settings</a></li>
+                        <li><a>Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="flex flex-col lg:flex-row bg-lime-200">
+            <div class="mx-3 my-5 Product-details w-full lg:w-[70%] grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="card my-2  bg-base-100 shadow-2xl ">
+                    <figure><img class="w-full h-40" src="./img/coffee.jpg" alt="Shoes" /></figure>
+                    <div class="card-body changeIt">
+                        <h2 id="firstCard" class="card-title">coffee!</h2>
+                        <p>Coffee????</p>
+                        <input id="firstPrice" type="text" placeholder="Price" class="input input-bordered w-full max-w-xs" />
+                        <input id="firstQuantity" type="text" placeholder="Quantity" class="input input-bordered w-full max-w-xs" />
+                        <div class="card-actions justify-end">
+                            <button id="firstButton" class="btn btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card my-2 bg-base-100 shadow-2xl">
+                    <figure><img class="w-full h-40" src="./img/heart_js.jpg" alt="Shoes" /></figure>
+                    <div class="card-body changeIt">
+                        <h2 id="secondCard" class="card-title">heart!</h2>
+                        <p>Give Love Take love!!!</p>
+                        <input id="secondPrice" type="text" placeholder="Price" class="input input-bordered w-full max-w-xs" />
+                        <input id="secondQuantity" type="text" placeholder="Quantity" class="input input-bordered w-full max-w-xs" />
+                        <div class="card-actions justify-end">
+                            <button id="secondButton" class="btn btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card my-2  bg-base-100 shadow-2xl">
+                    <figure><img class="w-full h-40" src="./img/panda.png" alt="Shoes" /></figure>
+                    <div class="card-body changeIt">
+                        <h2 id="thirdCard" class="card-title">Panda!</h2>
+                        <p>cute Panda</p>
+                        <input id="thirdPrice" type="text" placeholder="Price" class="input input-bordered w-full max-w-xs" />
+                        <input id="thirdQuantity" type="text" placeholder="Quantity" class="input input-bordered w-full max-w-xs" />
+                        <div class="card-actions justify-end">
+                            <button id="thirdButton" class="btn btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card my-2  bg-base-100 shadow-2xl">
+                    <figure><img class="w-full h-40" src="./img/umbrella.png" alt="Shoes" /></figure>
+                    <div class="card-body changeIt">
+                        <h2 id="fourthCard" class="card-title">umbrella!</h2>
+                        <p>Its raining Take umbrella</p>
+                        <input id="fourthPrice" type="text" placeholder="Price" class="input input-bordered w-full max-w-xs" />
+                        <input id="fourthQuantity" type="text" placeholder="Quantity" class="input input-bordered w-full max-w-xs" />
+                        <div class="card-actions justify-end">
+                            <button id="fourthButton" class="btn btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card my-2  bg-base-100 shadow-2xl">
+                    <figure><img class="w-full h-40" src="./img/vue-js.jpg" alt="Shoes" /></figure>
+                    <div class="card-body changeIt">
+                        <h2 id="fifthCard" class="card-title">Vue Vue!</h2>
+                        <p>js Framework!!!</p>
+                        <input id="fifthPrice" type="text" placeholder="Price" class="input input-bordered w-full max-w-xs" />
+                        <input id="fifthQuantity" type="text" placeholder="Quantity" class="input input-bordered w-full max-w-xs" />
+                        <div class="card-actions justify-end">
+                            <button id="fifthButton" class="btn btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card my-2 bg-base-100 shadow-2xl">
+                    <figure><img class="w-full h-40" src="./img/coffee.jpg" alt="Shoes" /></figure>
+                    <div class="card-body changeIt">
+                        <h2 id="sixthCard" class="card-title">coffee!</h2>
+                        <p>Coffee????</p>
+                        <input id="sixthPrice" type="text" placeholder="Price" class="input input-bordered w-full max-w-xs" />
+                        <input id="sixthQuantity" type="text" placeholder="Quantity" class="input input-bordered w-full max-w-xs" />
+                        <div class="card-actions justify-end">
+                            <button id="sixthButton" class="btn btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-price w-full lg:w-[30%]">
+                <h1 class="text-3xl font-bold text-center underline mt-5">Total Price : <span id="totalPrice">0</span></h1>
+                <div class="overflow-x-auto">
+                    <table class="table w-full mt-3">
+                      <!-- head -->
+                      <thead>
+                        <tr class="w-9/12 mx-auto">
+                          <th>No</th>
+                          <th>Name</th>
+                          <th>Price</th>
+                          <th>Quantity</th>
+                          <th>Total</th>
+                        </tr>
+                      </thead>
+                      <tbody id="table-container">
+
+                      </tbody>
+                    </table>
+                  </div>
+            </div>
+        </section>
+    </main>
+    <script src="./randomColor.js"></script>
+    <script src="./func.js"></script>
+    <script src="./shop.js"></script>
+</body>
+
+</html>
